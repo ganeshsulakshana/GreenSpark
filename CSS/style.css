@@ -1,0 +1,213 @@
+/*---------------------------------
+color,font and variables setup
+--------------------------------*/
+:root {
+  --primary-green: #1DB954;
+  --dark-green: #0F3D2E;
+  --dark-bg: #2d2d2d;
+  --light-bg: #F5F7FA;
+  --text-dark: #1E1E1E;
+  --accent-blue: #00B4D8;
+  --font-base: "poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.h1 .h2 .h3 .h4 .h5 .h6 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-green) !important;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--dark-green) !important;
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bg-dark {
+  background-color: var(--light-bg)
+}
+
+/*---------------------------------
+Button css setup
+--------------------------------*/
+.btn {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  margin-left: 10px !important;
+  font-weight: 700 !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-green) !important;
+  color: var(--text-dark) !important;
+  border: none !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-blue) !important;
+  color: var(--light-bg) !important;
+  transform: translateY(-6px);
+}
+
+.btn-light {
+  background-color: var(--light-bg) !important;
+  color: var(--text-dark) !important;
+  border: none !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-light:hover {
+  background-color: var(--accent-blue) !important;
+  color: var(--light-bg) !important;
+  transform: translateY(-6px);
+}
+
+/*---------------------------------
+Navbar css setup
+--------------------------------*/
+.navbar {
+  font-family: var(--font-base) !important;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/*---------------------------------
+Hero css setup
+--------------------------------*/
+#Hero {
+  background: url(../img/Hero3.png);
+  margin-top: -75px;
+  background-color: black;
+}
+
+.herotext {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+/*---------------------------------
+About Us css setup
+--------------------------------*/
+.brand-title {
+  font-size: 65px;
+  font-weight: 750;
+  font-family: var(--font-base);
+  margin-bottom: 52px;
+}
+
+.brand-p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: var(--font-base);
+
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.main-image {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #cfcfcf;
+}
+
+.option-box {
+  width: 60px;
+  height: 60px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/*-------------------
+    Service css setup
+    ------------------------*/
+.service-bg {
+
+  padding: 90px 0 70px;
+  background: linear-gradient(to bottom,
+      var(--primary-green),
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #0d1117);
+}
+
+.service-title {
+  font-size: 50px;
+  text-align: center;
+  color: var(--light-bg);
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.service-card {
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+  border-radius: 12px;
+  margin: 20px;
+  padding: 10px;
+  height: 280px;
+  box-shadow: 4px 15px 30px rgba(11, 213, 92, 0.559);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 4px 15px 30px rgba(33, 222, 255, 0.654);
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+/*-------------------
+    Project css setup
+    ------------------------*/
+.project-title {
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 50px;
+  color: var(--text-dark);
+  margin: 50px;
+  font-weight:750;
+}
+
+.projects {
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  border-radius: 12px;
+  margin: 20px;
+  padding: 10px;
+  height: 280px;
+  box-shadow:0 15px 30px rgba(50, 58, 53, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
